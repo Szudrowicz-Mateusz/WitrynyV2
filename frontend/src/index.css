@@ -1,0 +1,67 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb; /* Subtelne tło dla całej strony */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Styl dla ReactMarkdown */
+.prose {
+  color: #4b5563; /* gray-600 */
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  color: #1f2937; /* gray-800 */
+  font-weight: 700;
+}
+
+.prose p {
+  margin-bottom: 0.5rem;
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+/* Niestandardowy efekt hover dla kart */
+.note-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.note-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Styl dla przewijanego obszaru treści notatki */
+.note-content {
+  max-height: 100px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f3f4f6; /* gray-300 na gray-100 */
+}
+
+.note-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.note-content::-webkit-scrollbar-track {
+  background: #f3f4f6; /* gray-100 */
+}
+
+.note-content::-webkit-scrollbar-thumb {
+  background: #d1d5db; /* gray-300 */
+  border-radius: 3px;
+}

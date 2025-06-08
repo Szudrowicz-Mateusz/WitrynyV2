@@ -1,0 +1,10 @@
+# React + TypeScript
+node_modules/
+build/
+dist/
+.env
+.env.*
+.vite/
+coverage/
+*.tsbuildinfo
+.eslintcache
