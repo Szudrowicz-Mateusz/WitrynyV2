@@ -23,6 +23,8 @@ cd backend
 npm install
 npm run dev
 
+```markdown
+
 
 ### 2. Frontend Setup
 Open a terminal and run the following commands:
@@ -30,5 +32,7 @@ Open a terminal and run the following commands:
 cd frontend
 npm install
 npm start
+
+```markdown
 
 ## You can now run this project on your machine
