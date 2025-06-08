@@ -23,7 +23,7 @@ cd backend
 npm install
 npm run dev
 
-```markdown
+```
 
 
 ### 2. Frontend Setup
@@ -33,6 +33,6 @@ cd frontend
 npm install
 npm start
 
-```markdown
+```
 
 ## You can now run this project on your machine
