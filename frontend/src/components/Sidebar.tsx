@@ -18,7 +18,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
     <>
       {/* Przycisk hamburgera dla urządzeń mobilnych */}
       <button
-        className="md:hidden fixed top-4 left-4 z-50 p-2 bg-gray-800 text-white rounded-md"
+        className="md:fixed top-4 left-4 z-50 p-2 bg-gray-800 text-white rounded-md"
         onClick={toggleSidebar}
       >
         {isOpen ? '✕' : '☰'}
@@ -59,18 +59,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
           >
             {(FaPlus as any)()}
             Nowa notatka
-          </NavLink>
-          <NavLink
-            to="/search"
-            className={({ isActive }) =>
-              `flex items-center gap-2 px-4 py-2 rounded-md ${
-                isActive ? 'bg-blue-600' : 'hover:bg-gray-700'
-              }`
-            }
-            onClick={toggleSidebar}
-          >
-            {(FaSearch as any)()}
-            Wyszukaj
           </NavLink>
         </nav>
       </motion.div>
